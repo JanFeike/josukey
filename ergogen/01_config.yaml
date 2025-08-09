@@ -6,21 +6,7 @@ points:
                 bottom.row_net: P2
                 home.row_net: P0
                 top.row_net: P1
-                number.row_net: P12
             columns:
-                extra_pinky:
-                    key:
-                        col_net: P10
-                        spread: cx
-                    rows:
-                        bottom:
-                            led_in: "rgb_{{name}}"
-                            led_out: rgb_main_pinky_home
-                        home:
-                            led_in: "rgb_{{name}}"
-                            led_out: rgb_main_pinky_top
-                        top:
-                            led_in: "rgb_{{name}}"
                 pinky:
                     key:
                         col_net: P7
