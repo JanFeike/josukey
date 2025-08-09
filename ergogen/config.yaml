@@ -14,41 +14,25 @@ points:
                         spread: cx
                     rows:
                         bottom:
-                            led_in: "rgb_{{name}}"
-                            led_out: rgb_main_pinky_home
                         home:
-                            led_in: "rgb_{{name}}"
-                            led_out: rgb_main_pinky_top
                         top:
-                            led_in: "rgb_{{name}}"
                 pinky:
                     key:
                         col_net: P7
                         spread: cx
                     rows:
                         bottom:
-                            led_in: "rgb_{{name}}"
-                            led_out: rgb_main_pinky_home
                         home:
-                            led_in: "rgb_{{name}}"
-                            led_out: rgb_main_pinky_top
                         top:
-                            led_in: "rgb_{{name}}"
                 ring:
                     key:
                         col_net: P6
                         stagger: 4
                         spread: cx
                     rows:
-                        bottom:
-                            led_in: "rgb_{{name}}"
-                            led_out: rgb_main_pinky_bottom
+                        bottom:                         
                         home:
-                            led_in: "rgb_{{name}}"
-                            led_out: rgb_main_ring_bottom
                         top:
-                            led_in: "rgb_{{name}}"
-                            led_out: rgb_main_ring_home
                 middle:
                     key:
                         col_net: P5
@@ -56,14 +40,8 @@ points:
                         spread: cx
                     rows:
                         bottom:
-                            led_in: "rgb_{{name}}"
-                            led_out: rgb_main_middle_home
                         home:
-                            led_in: "rgb_{{name}}"
-                            led_out: rgb_main_middle_top
                         top:
-                            led_in: "rgb_{{name}}"
-                            led_out: rgb_main_ring_top
                 index:
                     key:
                         col_net: P4
@@ -71,14 +49,8 @@ points:
                         spread: cx
                     rows:
                         bottom:
-                            led_in: "rgb_{{name}}"
-                            led_out: rgb_thumb_home_home
                         home:
-                            led_in: "rgb_{{name}}"
-                            led_out: rgb_main_index_bottom
                         top:
-                            led_in: "rgb_{{name}}"
-                            led_out: rgb_main_index_home
                 inner:
                     key:
                         col_net: P3
@@ -86,14 +58,8 @@ points:
                         spread: cx
                     rows:
                         bottom:
-                            led_in: "rgb_{{name}}"
-                            led_out: rgb_main_inner_home
                         home:
-                            led_in: "rgb_{{name}}"
-                            led_out: rgb_main_inner_top
                         top:
-                            led_in: "rgb_{{name}}"
-                            led_out: rgb_main_index_top
         thumb:
             anchor:
                 ref: main_index_bottom
@@ -102,20 +68,14 @@ points:
             columns:
                 inner.key:
                     col_net: P5
-                    led_in: "rgb_{{name}}"
-                    led_out: rgb_main_middle_bottom
                     spread: cx
                 home.key:
                     col_net: P4
-                    led_in: "rgb_{{name}}"
-                    led_out: rgb_thumb_inner_home
                     spread: cx + 2
                     rotate: -18
                     stagger: -3.2
                 outer.key:
                     col_net: P3
-                    led_in: P9
-                    led_out: rgb_main_inner_bottom
                     spread: cx
                     rotate: -36
                     stagger: -9.2
@@ -208,15 +168,6 @@ pcbs.josukey:
             outline: _keycap_outlines
             layer: Eco1.User
     footprints:
-        led:
-            what: sk6812mini
-            where: true
-            adjust:
-                shift: [0, -5]
-            params:
-                din: "{{led_in}}"
-                dout: "{{led_out}}"
-                cutout: true
         diode:
             what: sod-123w
             where: true
@@ -224,8 +175,8 @@ pcbs.josukey:
                 from: "{{name}}"
                 to: "{{row_net}}"
             adjust:
-                shift: [ -7.6, -1.6 ]
-                rotate: 90
+                shift: [ 0, -5 ]
+                rotate: 0
         choc:
             what: choc
             where: true
