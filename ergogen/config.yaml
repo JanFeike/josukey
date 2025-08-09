@@ -1,12 +1,17 @@
 points:
-    key.padding: cy
+    key:
+        padding: cy
     zones:
         main:
             rows:
-                bottom.row_net: P2
-                home.row_net: P0
-                top.row_net: P1
-                number.row_net: P11
+                bottom:
+                    row_net: P2
+                home:
+                    row_net: P0
+                top:
+                    row_net: P1
+                number:
+                    row_net: P11
             columns:
                 extra_pinky:
                     key:
@@ -30,7 +35,7 @@ points:
                         stagger: 4
                         spread: cx
                     rows:
-                        bottom:                         
+                        bottom:
                         home:
                         top:
                 middle:
@@ -64,21 +69,26 @@ points:
             anchor:
                 ref: main_index_bottom
                 shift: [-0.5cx, -cy]
-            rows.home.row_net: P8
+            rows:
+                home:
+                    row_net: P8
             columns:
-                inner.key:
-                    col_net: P5
-                    spread: cx
-                home.key:
-                    col_net: P4
-                    spread: cx + 2
-                    rotate: -18
-                    stagger: -3.2
-                outer.key:
-                    col_net: P3
-                    spread: cx
-                    rotate: -36
-                    stagger: -9.2
+                inner:
+                    key:
+                        col_net: P5
+                        spread: cx
+                home:
+                    key:
+                        col_net: P4
+                        spread: cx + 2
+                        rotate: -18
+                        stagger: -3.2
+                outer:
+                    key:
+                        col_net: P3
+                        spread: cx
+                        rotate: -36
+                        stagger: -9.2
 outlines:
     _board_outline:
         -   what: polygon
@@ -162,6 +172,7 @@ cases.josukey:
         extrude: 6
         operation: add
 pcbs.josukey:
+    template: kicad8
     outlines:
         main.outline: _board_outline
         keycaps:
