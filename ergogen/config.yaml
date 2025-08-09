@@ -172,7 +172,6 @@ cases.josukey:
         extrude: 6
         operation: add
 pcbs.josukey:
-    template: kicad8
     outlines:
         main.outline: _board_outline
         keycaps:
@@ -212,20 +211,34 @@ pcbs.josukey:
         #        rotate: 180
         #   params:
         #       neg: GND
+#        TRRS:
+#            what: trrs_pj320a
+#            where:
+#                ref: main_inner_bottom
+#                shift: [-60, -60]
+#                rotate: 90
+#            params:
+#                side: f
+#                reversible: true
+#                symmetric: false
+#                SL: P2
+#                R2: P3
+#                R1: P1
+#                TP: P4
         TRRS:
-            what: trrs_pj320a
+            what: trrs
             where:
                 ref: main_inner_bottom
-                shift: [-60, -60]
-                rotate: 90
+                shift: [30.5, -2.5]
+                rotate: -90
             params:
-                side: f
-                reversible: true
+                designator: 'TRRS'
+                reverse: true
                 symmetric: false
-                SL: P2
-                R2: P3
-                R1: P1
-                TP: P4
+                A: undefined
+                B: undefined
+                C: undefined
+                D: undefined
         pcm12:
             what: pcm12
             where:
