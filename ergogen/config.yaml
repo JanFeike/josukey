@@ -101,39 +101,39 @@ outlines:
                 -   ref: thumb_inner_home
                     shift: [-0.6cx, -0.6cy]
 
-                -   ref: main_pinky_bottom
+                -   ref: main_extra_pinky_bottom
                     shift: [1.6cx, -0.6cy]
-                -   ref: main_pinky_bottom
+                -   ref: main_extra_pinky_bottom
                     shift: [0.6cx, -0.6cy]
-                -   ref: main_pinky_bottom
+                -   ref: main_extra_pinky_bottom
                     shift: [-0.6cx, -0.6cy]
 
-                -   ref: main_pinky_top
+                -   ref: main_extra_pinky_number
                     shift: [-0.6cx, 0.6cy]
-                -   ref: main_pinky_top
+                -   ref: main_extra_pinky_number
                     shift: [0.4cx, 0.6cy]
 
-                -   ref: main_ring_top
+                -   ref: main_ring_number
                     shift: [-0.5cx, 0.6cy]
-                -   ref: main_ring_top
+                -   ref: main_ring_number
                     shift: [0.4cx, 0.6cy]
 
-                -   ref: main_middle_top
+                -   ref: main_middle_number
                     shift: [-0.4cx, 0.61cy]
-                -   ref: main_middle_top
+                -   ref: main_middle_number
                     shift: [0.4cx, 0.6cy]
 
-                -   ref: main_index_top
+                -   ref: main_index_number
                     shift: [-0.4cx, 0.6cy]
-                -   ref: main_index_top
+                -   ref: main_index_number
                     shift: [0.5cx, 0.6cy]
 
-                -   ref: main_inner_top
+                -   ref: main_inner_number
                     shift: [-0.4cx, 0.6cy]
-                -   ref: main_inner_top
+                -   ref: main_inner_number
                     shift: [0.5cx, 0.6cy]
 
-                -   ref: main_inner_top
+                -   ref: main_inner_number
                     shift: [0.6cx, 0.4cy]
                 -   ref: main_inner_top
                     shift: [1.8cx, 0.4cy]
