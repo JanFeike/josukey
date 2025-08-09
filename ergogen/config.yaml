@@ -193,14 +193,28 @@ pcbs.josukey:
             adjust:
                 shift: [22, 6.5]
                 rotate: -90
-        jst-s2b-ph-kl:
-            what: jst-s2b-ph-kl
+       # jst-s2b-ph-kl:
+       #     what: jst-s2b-ph-kl
+       #     where:
+       #         ref: main_inner_bottom
+       #         shift: [21, -2]
+        #        rotate: 180
+        #   params:
+        #       neg: GND
+        TRRS:
+            what: trrs_pj320a
             where:
                 ref: main_inner_bottom
-                shift: [21, -2]
-                rotate: 180
+                shift: [-60, -60]
+                rotate: 90
             params:
-                neg: GND
+                side: f
+                reversible: true
+                symmetric: false
+                SL: P2
+                R2: P3
+                R1: P1
+                TP: P4
         pcm12:
             what: pcm12
             where:
@@ -218,57 +232,5 @@ pcbs.josukey:
                 rotate: 90
             params:
                 r1: RST
-                r2: GND
-        front_text: &text
-            what: text
-            where: &textWhere
-                ref: main_pinky_bottom
-                shift: [12, -7]
-            params: &textParams
-                text: Josukey\nA keyboard for Joey
-                justify: left
-        back_text:
-            <<: *text
-            where:
-                <<: *textWhere
-                shift: [27, -7]
-            params:
-                <<: *textParams
-                layer: B.SilkS
-                justify: left mirror
-        safeText:
-            <<: *text
-            what: keepout
-            params:
-                points:
-                    -   x: -0.5
-                        y: -2
-                    -   x: 15.5
-                        y: -2
-                    -   x: 15.5
-                        y: 2
-                    -   x: -0.5
-                        y: 2
-        peace: &icon
-            what: peace
-            where:
-                ref: main_inner_bottom
-                shift: [13, -6]
-            params:
-                scale: 2
-        love:
-            <<: *icon
-            what: love
-        safeIcon:
-            <<: *icon
-            what: keepout
-            params:
-                points:
-                    -   x: -0.5
-                        y: -0.5
-                    -   x: 13.25
-                        y: -0.5
-                    -   x: 13.25
-                        y: 13.25
-                    -   x: -0.5
-                        y: 13.25
+                r2: GND        
+
