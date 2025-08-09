@@ -239,16 +239,16 @@ pcbs.josukey:
                 B: undefined
                 C: undefined
                 D: undefined
-        pcm12:
-            what: pcm12
-            where:
-                ref: main_inner_bottom
-                shift: [30.5, 3]
-                rotate: 90
-            params:
-                from: pos
-                to: RAW
-        wuerth-434121025816:
+#        pcm12: #an aus schalter
+#            what: pcm12
+#            where:
+#                ref: main_inner_bottom
+#                shift: [30.5, 3]
+#                rotate: 90
+#            params:
+#                from: pos
+#                to: RAW
+#        wuerth-434121025816:
             what: wuerth-434121025816
             where:
                 ref: main_inner_bottom
