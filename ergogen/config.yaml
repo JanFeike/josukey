@@ -5,13 +5,13 @@ points:
         main:
             rows:
                 bottom:
-                    row_net: P2
+                    row_net: P7
                 home:
-                    row_net: P0
+                    row_net: P6
                 top:
-                    row_net: P1
+                    row_net: P5
                 number:
-                    row_net: P11
+                    row_net: P4
             columns:
                 extra_pinky:
                     key:
@@ -23,7 +23,7 @@ points:
                         top:
                 pinky:
                     key:
-                        col_net: P7
+                        col_net: P16
                         spread: cx
                     rows:
                         bottom:
@@ -31,7 +31,7 @@ points:
                         top:
                 ring:
                     key:
-                        col_net: P6
+                        col_net: P14
                         stagger: 4
                         spread: cx
                     rows:
@@ -40,7 +40,7 @@ points:
                         top:
                 middle:
                     key:
-                        col_net: P5
+                        col_net: P15
                         stagger: 2
                         spread: cx
                     rows:
@@ -49,7 +49,7 @@ points:
                         top:
                 index:
                     key:
-                        col_net: P4
+                        col_net: P18
                         stagger: -2
                         spread: cx
                     rows:
@@ -58,7 +58,7 @@ points:
                         top:
                 inner:
                     key:
-                        col_net: P3
+                        col_net: P19
                         stagger: -2
                         spread: cx
                     rows:
@@ -75,17 +75,17 @@ points:
             columns:
                 inner:
                     key:
-                        col_net: P5
+                        col_net: P18
                         spread: cx
                 home:
                     key:
-                        col_net: P4
+                        col_net: P19
                         spread: cx + 2
                         rotate: -18
                         stagger: -3.2
                 outer:
                     key:
-                        col_net: P3
+                        col_net: P20
                         spread: cx
                         rotate: -36
                         stagger: -9.2
@@ -95,16 +95,16 @@ points:
                 shift: [0.25cx, -cy-2]
             rows:
                 home:
-                    row_net: P8
+                    row_net: P9
             columns:
                 left:
                     key:
-                        col_net: P5
+                        col_net: P18
                         #spread: cx
                         rotate: -9
                 right:
                     key:
-                        col_net: P4
+                        col_net: P20
                         spread: cx + 4
                         rotate: -36
                         stagger: -3.2-6
