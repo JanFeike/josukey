@@ -264,9 +264,9 @@ pcbs.josukey:
                 designator: 'TRRS'
                 reverse: true
                 symmetric: false
-                A: undefined
-                B: undefined
-                C: undefined
+                A: VCC
+                B: GND
+                C: SCL
                 D: undefined
 #        pcm12: #an aus schalter
 #            what: pcm12
