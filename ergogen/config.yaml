@@ -67,7 +67,7 @@ points:
                         top:
         thumb:
             anchor:
-                ref: main_index_bottom
+                ref: main_inner_bottom
                 shift: [-0.5cx, -cy]
             rows:
                 home:
@@ -89,6 +89,26 @@ points:
                         spread: cx
                         rotate: -36
                         stagger: -9.2
+        thumb2:
+            anchor:
+                ref: thumb_inner_home
+                shift: [0.25cx, -cy-2]
+            rows:
+                home:
+                    row_net: P8
+            columns:
+                left:
+                    key:
+                        col_net: P5
+                        #spread: cx
+                        rotate: -9
+                right:
+                    key:
+                        col_net: P4
+                        spread: cx + 4
+                        rotate: -36
+                        stagger: -3.2-6
+
 outlines:
     _board_outline:
         -   what: polygon
@@ -97,17 +117,26 @@ outlines:
                 -   ref: thumb_outer_home
                     shift: [0.6cx, 0.6cy]
                 -   ref: thumb_outer_home
-                    shift: [0.6cx, -0.6cy]
-                -   ref: thumb_outer_home
+                    shift: [0.6cx, -0.4cy]
+#                -   ref: thumb_outer_home
+#                    shift: [-0.4cx, -0.6cy]
+                -   ref: thumb2_right_home
+                    shift: [0.6cx, +0.4cy]
+                -   ref: thumb2_right_home
+                    shift: [+0.6cx, -0.6cy]
+                -   ref: thumb2_right_home
                     shift: [-0.4cx, -0.6cy]
-
-                -   ref: thumb_home_home
+                -   ref: thumb2_left_home
                     shift: [0.4cx, -0.6cy]
-                -   ref: thumb_home_home
-                    shift: [-0.4cx, -0.6cy]
+                -   ref: thumb2_left_home
+                    shift: [-0.6cx, -0.6cy]
+#                -   ref: thumb_home_home
+#                    shift: [0.4cx, -0.6cy]
+#                -   ref: thumb_home_home
+#                    shift: [-0.4cx, -0.6cy]
 
-                -   ref: thumb_inner_home
-                    shift: [0.4cx, -0.6cy]
+#                -   ref: thumb_inner_home
+#                    shift: [0.4cx, -0.6cy]
                 -   ref: thumb_inner_home
                     shift: [-0.6cx, -0.6cy]
 
@@ -185,8 +214,8 @@ pcbs.josukey:
                 from: "{{name}}"
                 to: "{{row_net}}"
             adjust:
-                shift: [ 0, -5 ]
-                rotate: 0
+                shift: [ -7.6, -1.6 ]
+                rotate: 90
         choc:
             what: choc
             where: true
@@ -229,7 +258,7 @@ pcbs.josukey:
             what: trrs
             where:
                 ref: main_inner_bottom
-                shift: [30.5, -2.5]
+                shift: [30.5, -2.5-5]
                 rotate: -90
             params:
                 designator: 'TRRS'
@@ -248,12 +277,12 @@ pcbs.josukey:
 #            params:
 #                from: pos
 #                to: RAW
-#        wuerth-434121025816:
+        wuerth-434121025816:
             what: wuerth-434121025816
             where:
                 ref: main_inner_bottom
-                shift: [30, -6]
-                rotate: 90
+                shift: [22, 3]
+                rotate: 0
             params:
                 r1: RST
                 r2: GND        
