@@ -268,7 +268,7 @@ pcbs.josukey:
                 symmetric: false
                 A: VCC
                 B: GND
-                C: SCL
+                C: P3
                 D: undefined
 #        pcm12: #an aus schalter
 #            what: pcm12
